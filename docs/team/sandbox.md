@@ -23,8 +23,8 @@ I'm currently working on a *very significant* refactor in the Sandbox's *massive
 [github]: https://github.com/adlnet/Sandbox
 [screenshot]: ../../img/mars.png
 
-[selenium]: https://virtual.wf/
-[webdriver]: https://virtual.wf/
+[selenium]: http://seleniumhq.org
+[webdriver]: http://webdriver.io
 
 [node]: https://nodejs.org/
 [express]: http://expressjs.com/
