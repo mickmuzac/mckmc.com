@@ -1,3 +1,16 @@
 <span class="h1"></span>
 
-Come one, come all!
+Hello, there! My name is Mick Muzac and I am a software engineer living in beautiful (and very warm) Orlando, FL.
+
+I currently work at [Advanced Distributed Learning (ADL)][adl] on education and training technologies, especially as they relate to the Department of Defense and the Federal Government at large. Here, I primarily do full stack development mainly in Javascript (NodeJS, Express, AngularJS, random databases). I've also worked on projects that are written on a more traditional stack (see 3D Repository).
+
+I previously worked at the [University of Central Florida (UCF)][ucf] as a Web Developer. Back in those days, I worked primarily with PHP and SQL Server, and was responsible for creating and maintaining web applications handling [student applications][gems] for [a number][gems] of [NSF funded programs][yes].
+
+I'm also a *poker master* (not to be confused with a [Pokémon Master][pokemon]). And I like (read: love) video games.
+
+[adl]: http://adlnet.gov
+[ucf]: http://www.ucf.edu/
+[yes]: https://yes.ucf.edu/
+[ure]: http://ure.excel.ucf.edu/
+[gems]: http://gems.excel.ucf.edu/?home
+[pokemon]: http://pokemon.wikia.com/wiki/Pok%C3%A9mon_Master
