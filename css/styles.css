@@ -35,15 +35,24 @@ a:hover{
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
-  letter-spacing: 20px;
+  letter-spacing: 0px;
   color: #222;
+}
+
+#menu a h1:first-of-type{
+  letter-spacing: 22px;
+  margin-bottom: -10px;
 }
 
 #menu span{
   font-weight: lighter;
-  font-size: 36px;
-  color: #E7E7E7;
-  letter-spacing: 8px;
+  font-size: 70px;
+  color: #EAEAEA;
+  letter-spacing: 0px;
+}
+
+#menu span:first-of-type{
+  letter-spacing: inherit;
 }
 
 #list h2{

@@ -8,7 +8,7 @@ The site is built entirely in Javascript via [NodeJS][node] and [Express][expres
 
 I am known as [/u/impressflow][impressflow] on Reddit.
 
-Note: the live site is currently sitting behind HTTP Basic Auth. Use the credentials: 'planners:We are the best planners ever!' to log in.
+Note: the live site is currently sitting behind HTTP Basic Auth. Use the credentials 'planners:We are the best planners ever!' to log in.
 
 ![WkndMVP Screenshot][screenshot]
 
