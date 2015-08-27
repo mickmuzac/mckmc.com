@@ -40,6 +40,12 @@ app.controller('ListController', ['$scope', '$http', '$sce', function($scope, $h
   function updateContents(res){
     console.log("Got it!", res);
     $scope.contents = $sce.trustAsHtml(marked(res.data));
+
+    window.setTimeout(function(){
+      $("#contents .h1").typed({
+          strings: ["Welcome to the place I call... ^1200 home."],
+          typeSpeed: 60
+      });}, 250);
   }
 
 }]);
