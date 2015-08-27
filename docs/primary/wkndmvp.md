@@ -1,4 +1,4 @@
-# [WkndMVP][mvp]
+# <a href="http://planners:We are the best planners ever!@wkndmvp.com/">WkndMVP</a>
 
 WkndMVP (Weekend Minimum Viable Product) is a community, it's a series of e-hackathons, it's a way of life (okay, maybe I'm pushing it). [/r/WeekendMVP][reddit] is a brand new community for all kinds of builders (not just developers; we have designers, marketers, business people, mentors, etc.) with the desire to ship MVPs and eventually take them to the next level.
 
@@ -7,6 +7,8 @@ The original idea for this was inspired by [/u/tianan][tianan]. In his post on R
 The site is built entirely in Javascript via [NodeJS][node] and [Express][express] and features REST endpoints for doing things such as creating teams, creating team invitation links, removing yourself from a team, etc.
 
 I am known as [/u/impressflow][impressflow] on Reddit.
+
+Note: the live site is currently sitting behind HTTP Basic Auth. Use the credentials: 'planners:We are the best planners ever!' to log in.
 
 ![WkndMVP Screenshot][screenshot]
 
@@ -22,7 +24,6 @@ I am known as [/u/impressflow][impressflow] on Reddit.
 * [Mongoose][mongoose]
 * [AngularJS][angular]
 
-[mvp]: http://wkndmvp.com/
 [reddit]: https://www.reddit.com/r/WeekendMVP/
 [screenshot]: ../img/wkndmvp.png
 [tianan]: https://www.reddit.com/user/tianan
