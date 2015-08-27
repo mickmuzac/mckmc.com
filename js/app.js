@@ -22,7 +22,7 @@ var docs = {
     },
     {
       "name": "sandbox",
-      "title": "Virtual World Sandbox"
+      "title": "VW Sandbox"
     }
   ]
 };

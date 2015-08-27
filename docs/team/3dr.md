@@ -2,9 +2,9 @@
 
 The [ADL 3D Repository][github] is a social web application for uploading, discovering, and downloading 3D models. The server is written in C# with frontend templates written in ASP.NET and a MySQL database handling the storage of relational data.
 
-When I started at ADL, one of the first items I was tasked with completing was adding a simple word cloud to the 3DR. This meant learning how to use the 3DR's data access layer (DAL) to pull relevant information, modifying relevant endpoints, and wiring up ASP.NET templates. Easy enough, I thought.
+When I started at ADL, one of the first items I was tasked with completing was adding a simple word cloud to the 3DR. This meant learning how to use the 3DR's data access layer (DAL) to pull relevant information, modifying the appropriate endpoints, and wiring up ASP.NET templates. Easy enough, I thought.
 
-However, during my initial exploratory phase, I made a number of discoveries that had serious security implications. I immediately made my concerns known within the organization and I promptly led an effort to immediately increase security in the 3DR.
+However, during my initial exploratory phase, I made a number of discoveries that had serious security implications. I immediately made my concerns known within the organization and I promptly led an effort to immediately increase security in the 3DR. I cannot (should not) disclose these fixes publicly, please contact me directly with questions.
 
 ![3DR Screenshot][screenshot]
 

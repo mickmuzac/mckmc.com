@@ -8,9 +8,12 @@ I previously worked at the [University of Central Florida (UCF)][ucf] as a Web D
 
 I'm also a *poker master* (not to be confused with a [Pokémon Master][pokemon]). And I like (read: love) video games.
 
+This page iteself is [available on Github][github]. Meta, I know.
+
 [adl]: http://adlnet.gov
 [ucf]: http://www.ucf.edu/
 [yes]: https://yes.ucf.edu/
 [ure]: http://ure.excel.ucf.edu/
 [gems]: http://gems.excel.ucf.edu/?home
 [pokemon]: http://pokemon.wikia.com/wiki/Pok%C3%A9mon_Master
+[github]: https://github.com/mickmuzac/mckmc.com
