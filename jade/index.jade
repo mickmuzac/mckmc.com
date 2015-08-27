@@ -16,12 +16,13 @@ html(lang="en", class="")
   body(ng-app="mckmc")
     #container(ng-controller="ListController")
       #menu
-        h1 M
-          span I
-          | CK
-        h1 M
-          span UZA
-          | C
+        a(href="/")
+          h1 M
+            span I
+            | CK
+          h1 M
+            span UZA
+            | C
         #list
           h2 Primary Developer
           div(ng-repeat="doc in docs.primary")

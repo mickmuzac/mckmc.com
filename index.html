@@ -14,9 +14,9 @@
   </head>
   <body ng-app="mckmc">
     <div id="container" ng-controller="ListController">
-      <div id="menu">
-        <h1>M<span>I</span>CK</h1>
-        <h1>M<span>UZA</span>C</h1>
+      <div id="menu"><a href="/">
+          <h1>M<span>I</span>CK</h1>
+          <h1>M<span>UZA</span>C</h1></a>
         <div id="list">
           <h2>Primary Developer</h2>
           <div ng-repeat="doc in docs.primary"><a href="" ng-click="loadDoc(doc.name, 'docs/primary/')">{{doc.title}}</a></div>

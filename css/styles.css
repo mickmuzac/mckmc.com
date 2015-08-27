@@ -30,24 +30,30 @@ a:hover{
     min-width: 250px;
 }
 
-#menu h1{
+#menu a h1{
   font-size: 70px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
   letter-spacing: 20px;
+  color: #222;
 }
 
 #menu span{
   font-weight: lighter;
-  font-size: 20px;
-  color: #d0d0d0;
+  font-size: 36px;
+  color: #E7E7E7;
+  letter-spacing: 8px;
 }
 
 #list h2{
   font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#list h2:first-of-type{
+  margin-top: 5px;
 }
 
 #list{
@@ -89,6 +95,7 @@ a:hover{
   text-align: center;
   margin-top: 0;
   font-weight: bold;
+  line-height: 60px;
 }
 
 #contents img{

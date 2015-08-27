@@ -1,4 +1,4 @@
-<span class="h1"></span>
+<p style="margin: 0;"><span class="h1"></span></p>
 
 Hello, there! My name is Mick Muzac and I am a software engineer living in beautiful (and very warm) Orlando, FL.
 
@@ -6,7 +6,7 @@ I currently work at [Advanced Distributed Learning (ADL)][adl] on education and 
 
 I previously worked at the [University of Central Florida (UCF)][ucf] as a Web Developer. Back in those days, I worked primarily with PHP, SQL Server, and MySQL. I was responsible for creating and maintaining web applications handling [student applications][gems] for [a number][gems] of [NSF funded programs][yes].
 
-I'm also a *poker master* (not to be confused with a [Pokémon Master][pokemon]). And I like (read: love) video games.
+I'm also a *poker master* (not to be confused with [Pokémon Master][pokemon]). And I like (read: love) video games.
 
 This page itself is [available on Github][github]. Meta, I know.
 
