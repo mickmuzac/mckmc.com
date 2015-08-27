@@ -1,0 +1,100 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #222;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #4E85BE;
+}
+
+a:hover{
+  border-bottom: 1px dotted #000;
+}
+
+#container{
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  min-width: 1280px;
+}
+
+#menu{
+    float:left;
+    height: 100%;
+    width: 20%;
+    font-family: Century Gothic, sans-serif;
+    min-width: 250px;
+}
+
+#menu h1{
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 20px;
+}
+
+#menu span{
+  font-weight: lighter;
+  font-size: 20px;
+  color: #d0d0d0;
+}
+
+#list h2{
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+#list{
+  margin-top: 20px;
+  padding: 20px 10px;
+  border-top: 1px solid #aaa;
+  width: 75%;
+}
+
+#list a{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+
+.right{
+  text-align: right;
+}
+
+/*
+  Contents
+*/
+
+#contents{
+  float:left;
+  width: 60%;
+  min-height: 100%;
+  border-left: 1px solid #ccc;
+  padding: 30px;
+  padding-left: 100px;
+  font-size: 20px;
+  line-height: 35px;
+  color: #333;
+}
+
+#contents h1{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+#contents img{
+  margin: 0 auto;
+  clear: both;
+  display: block;
+  padding: 1px;
+  max-height: 410px;
+}

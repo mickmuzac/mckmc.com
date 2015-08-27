@@ -1,0 +1,40 @@
+//output:../index.html
+doctype html
+html(lang="en", class="")
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title MCKMC
+    link(rel='stylesheet', href='css/styles.css')
+    script(src='bower_components/modernizr/modernizr.js')
+    script(src='bower_components/marked/marked.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
+    script(src='js/app.js')
+  body(ng-app="mckmc")
+    #container(ng-controller="ListController")
+      #menu
+        h1 M
+          span I
+          | CK
+        h1 M
+          span UZA
+          | C
+        #list
+          h2 Primary Developer
+          div(ng-repeat="doc in docs.primary")
+            a(href="", ng-click="loadDoc(doc.name, 'docs/primary/')") {{doc.title}}
+          h2 Team Projects
+          div(ng-repeat="doc in docs.team")
+            a(href="", ng-click="loadDoc(doc.name, 'docs/team/')") {{doc.title}}
+          h2 Find Me on
+          div
+            a(href="https://github.com/mickmuzac") Github
+          div
+            a(href="https://www.hackerrank.com/mickmuzac") HackerRank
+          div
+            a(href="https://www.linkedin.com/in/mickmuzac") LinkedIn      
+          div
+            a(href="https://www.reddit.com/user/impressflow/") Reddit      
+        
+      #contents(ng-bind-html="contents")

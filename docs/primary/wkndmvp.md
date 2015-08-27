@@ -4,7 +4,7 @@ WkndMVP (Weekend Minimum Viable Product) is a community, it's a series of e-hack
 
 The original idea for this was inspired by [/u/tianan][tianan]. In his post on Reddit, he offered to build MVPs for people over the weekend while his wife was away. We thought he was doing incredibly cool work and that there must be other people who would be eager to do the same! Over time, we found over 100 like-minded people from r/startups alone and eventually built our subscriber list to ~500 users!
 
-The site is built entirely in Javascript via [NodeJS][node] and [Express][express] and features REST endpoints for doing things such as creating a team, creating team invitation links, removing yourself from a team, etc.
+The site is built entirely in Javascript via [NodeJS][node] and [Express][express] and features REST endpoints for doing things such as creating teams, creating team invitation links, removing yourself from a team, etc.
 
 I am known as [/u/impressflow][impressflow] on Reddit.
 
