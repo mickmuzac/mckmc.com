@@ -1,0 +1,23 @@
+{
+  "name": "mckmc.com",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mickmuzac/mckmc.com",
+  "authors": [
+    "Mick Muzac <mmuzac23@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "marked": "~0.3.5",
+    "modernizr": "~2.8.3",
+    "typed.js": "*"
+  }
+}
