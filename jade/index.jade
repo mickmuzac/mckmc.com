@@ -4,9 +4,16 @@ html(lang="en", class="")
 
   head
     meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='HandheldFriendly', content='true')
+    
     title MCKMC
     link(rel='stylesheet', href='css/styles.css')
+    link(rel='stylesheet', href='bower_components/alertify/themes/alertify.core.css')
+    link(rel='stylesheet', href='bower_components/alertify/themes/alertify.default.css')
+    
+    script(src='bower_components/isMobile/isMobile.min.js')
+    script(src='bower_components/alertify/alertify.min.js')
     script(src='bower_components/modernizr/modernizr.js')
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/typed.js/dist/typed.min.js')
@@ -14,8 +21,8 @@ html(lang="en", class="")
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
     script(src='js/app.js')
   body(ng-app="mckmc")
-    #container(ng-controller="ListController")
-      #menu
+    #container(ng-controller="ListController", ng-class="mobile")
+      #menu(ng-class="menuClass")
         a(href="/")
           h1 M
             span I
@@ -42,4 +49,4 @@ html(lang="en", class="")
           div
             a(href="https://www.reddit.com/user/impressflow/") Reddit      
         
-      #contents(ng-bind-html="contents")
+      #contents(ng-bind-html="contents", ng-class="mobile")

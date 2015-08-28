@@ -1,4 +1,4 @@
-<p style="margin: 0;"><span class="h1"></span></p>
+<p style="margin: 0;"><span class="h1">Welcome to the place I call... home.</span></p>
 
 Hello, there! My name is Mick Muzac and I am a software engineer living in beautiful (and very warm) Orlando, FL.
 

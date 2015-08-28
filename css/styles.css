@@ -28,6 +28,7 @@ a:hover{
     width: 20%;
     font-family: Century Gothic, sans-serif;
     min-width: 250px;
+    background: #fff;
 }
 
 #menu a h1{
@@ -136,4 +137,43 @@ a:hover{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/*
+  Mobile styles
+*/
+
+#container.mobile{
+  min-width:inherit;
+  width: 100%;
+  overflow: auto;
+}
+
+#contents.mobile{
+  width: 95%;
+  padding: 10px;
+}
+
+#contents.mobile img{
+  max-width: 95%;
+}
+
+#menu.mobile{
+  position: absolute;
+  border-right: 1px solid #ccc;
+  z-index: 1;
+  padding-right: 15px;
+
+  -webkit-box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
+  -moz-box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
+  box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
+}
+
+.out{
+  left: -100%;
+  transition: left .5s ease-out;
+}
+.in{
+  left: 0;
+  transition: left .5s ease-in;
 }
