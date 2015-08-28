@@ -147,11 +147,16 @@ a:hover{
   min-width:inherit;
   width: 100%;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 #contents.mobile{
   width: 95%;
   padding: 10px;
+}
+
+#contents.mobile.in{
+  overflow:hidden;
 }
 
 #contents.mobile img{
@@ -160,20 +165,22 @@ a:hover{
 
 #menu.mobile{
   position: absolute;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #E0E0E0;
   z-index: 1;
   padding-right: 15px;
+  overflow: auto;
+  overflow-x: hidden;
 
   -webkit-box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
   -moz-box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
   box-shadow: 3px 0px 40px 9px rgba(0,0,0,0.1);
 }
 
-.out{
+#menu.mobile.out{
   left: -100%;
   transition: left .5s ease-out;
 }
-.in{
+#menu.mobile.in{
   left: 0;
   transition: left .5s ease-in;
 }

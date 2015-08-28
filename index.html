@@ -19,7 +19,7 @@
   </head>
   <body ng-app="mckmc">
     <div id="container" ng-controller="ListController" ng-class="mobile">
-      <div id="menu" ng-class="menuClass"><a href="/">
+      <div id="menu" ng-class="mobile"><a href="/">
           <h1>M<span>I</span>CK</h1>
           <h1>M<span>UZA</span>C</h1></a>
         <div id="list">
@@ -35,7 +35,7 @@
           <div><a href="https://www.reddit.com/user/impressflow/">Reddit      </a></div>
         </div>
       </div>
-      <div id="contents" ng-bind-html="contents" ng-class="mobile"></div>
+      <div id="contents" ng-bind-html="contents" ng-class="mobile" ng-click="hideMenu()"></div>
     </div>
   </body>
 </html>

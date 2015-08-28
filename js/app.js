@@ -29,15 +29,16 @@ var docs = {
 
 $('#menu.mobile')
 
-app.controller('ListController', ['$scope', '$http', '$sce', function($scope, $http, $sce){
+app.controller('ListController', ['$scope', '$http', '$sce', '$timeout', function($scope, $http, $sce, $timeout){
 
   $scope.docs = docs;
   $scope.contents = $sce.trustAsHtml('Hello my friend!');
-  $scope.menuClass = "";
-  $scope.mobile = isMobile.any ? "mobile" : "";
+  $scope.mobile = "";
+  $scope.hideMenu = hideMenu;
 
   var newVisitor = !localStorage || !localStorage.alreadyVisited;
   var doneTyping = false;
+  var showMenu;
 
   hideMenu();
 
@@ -47,42 +48,50 @@ app.controller('ListController', ['$scope', '$http', '$sce', function($scope, $h
   }
 
   $scope.toggleMenu = function(){
-    if($scope.showMenu) showMenu();
+    if(showMenu) revealMenu();
     else hideMenu();
   }
 
   function hideMenu(){
-    if(isMobile.any) $scope.menuClass = "mobile out";
-    $scope.showMenu = true;
+    if(isMobile.any) $scope.mobile = "mobile out";
+    showMenu = true;
   }
-  function showMenu(){
-    if(isMobile.any) $scope.menuClass = "mobile in";
-    $scope.showMenu = false;
+  function revealMenu(){
+    if(isMobile.any) $scope.mobile = "mobile in";
+    showMenu = false;
   }
 
   function updateContents(res){
-    console.log("Got it!", res);
     $scope.contents = $sce.trustAsHtml(marked(res.data));
 
     if(newVisitor){
-      window.setTimeout(function(){
+      $timeout(function(){
         $("#contents .h1").typed({
             strings: ["Welcome to the place I call... ^1200 home."],
             typeSpeed: 60,
-            callback: function(){ doneTyping = true; }
+            callback: function(){
+              doneTyping = true;
+              if(!isMobile.any) setOldUser();
+            },
+            contentType: 'text'
         });
-      }, 250);
+      }, 0, false);
     }
+  }
+
+  function setOldUser(){
+    newVisitor = false;
+    localStorage.alreadyVisited = true;
   }
 
   $scope.loadDoc("me", "docs/");
 
   if(isMobile.any){
-    var lastX = 0, threshold = 0.12 * $(window).width();
+    var lastX = 0, threshold = 0.3 * $(window).width();
     var touchMove = function(e) {
         var touch = e.touches[0];
-        if($scope.showMenu && touch.pageX - lastX > threshold ||
-           !$scope.showMenu && lastX - touch.pageX > threshold){
+        if(showMenu && touch.pageX - lastX > threshold ||
+           !showMenu && lastX - touch.pageX > threshold){
 
            lastX = touch.pageX;
            $scope.toggleMenu();
@@ -96,8 +105,7 @@ app.controller('ListController', ['$scope', '$http', '$sce', function($scope, $h
 
       if(doneTyping && newVisitor){
         alertify.alert("Pro-tip: you can pan left and right to open and close the menu.");
-        localStorage.alreadyVisited = true;
-        newVisitor = false;
+        setOldUser();
       }
     }
 
