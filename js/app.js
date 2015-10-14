@@ -63,6 +63,7 @@ app.controller('ListController', ['$scope', '$http', '$sce', '$timeout', functio
 
   function updateContents(res){
     $scope.contents = $sce.trustAsHtml(marked(res.data));
+    $("html, body, #menu, #container").scrollTop(0);
 
     if(newVisitor){
       $timeout(function(){
